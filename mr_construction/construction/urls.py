@@ -4,8 +4,8 @@ from . import views
 
 urlspatren=[
     path('', views.Index, name='index'),
-    path('', views.About, name='about'),
-    path('', views.Projdcts, name='projects'),
-    path('', views.Contect, name='contect'),
+    path('about', views.About, name='about'),
+    path('prijects', views.Projdcts, name='projects'),
+    path('contact', views.Contect, name='contect'),
 
 ]
