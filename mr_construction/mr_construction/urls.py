@@ -20,5 +20,9 @@ from construction import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('index.urls')),
+    path('about', include('about.urls')),
+    path('projects', include('projects.urls')),
+    path('contact', include('contact.urls')),
+
 
 ]
