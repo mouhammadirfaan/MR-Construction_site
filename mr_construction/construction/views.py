@@ -5,13 +5,13 @@ from django.http import HttpResponse, HttpRequest
 
 # Create your views here.
 def Index(request):
-    return render(request, 'constructiion/index.html')
+    return render(request, 'construction/index.html')
    
 def About(request):
-    return render(request, 'constructiion/about.html')
+    return render(request, 'construction/about.html')
 
 def Projdcts(request):
-    return render(request, 'constructiion/projdcts.html')
+    return render(request, 'construction/projdcts.html')
 
 def Contect(request):
     return render(request, 'constructiion/contect.html')
