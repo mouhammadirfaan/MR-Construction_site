@@ -1,3 +1,10 @@
-#hello{
-    background-color: black;
+#navbarcolor{
+    background:black;
+    margin: auto ;
+    padding: 0;
+    font-size: medium;
+}
+#navfontcolor{
+    color: #f3f3f3;
+    font-size: medium;
 }
