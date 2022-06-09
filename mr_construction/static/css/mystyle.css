@@ -1,8 +1,8 @@
 #navbarcolor{
-    background: wheat;
-    color: aliceblue;
+    background: green;
+    color:white;
     padding: 10px;
-    margin-top: 0%;
+    margin: 0px;
 }
 
 #navfontcolor{
@@ -15,10 +15,25 @@
     margin:auto;
 }
 
-.about{
+.recentProjHeader{
+    background-color: antiquewhite;
     color: black;
     text-align: center;
     padding-top: 10px;
-    padding-bottom 10px;
+    padding: 10px 0px 20px 0px;
 
 }
+
+#recentrow{
+    padding: 10px 20px 10px 10px;
+    margin: 10px 20px 10px 10px;
+    
+}
+#vision{
+    background: black;
+    color: azure;
+    text-align: center;
+    text-shadow: 10px;
+
+}
+
