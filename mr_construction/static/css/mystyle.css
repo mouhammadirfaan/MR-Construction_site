@@ -1,9 +1,8 @@
 #navbarcolor{
-    background: green;
+    background-color:bisque;
     color:white;
-    padding: 10px;
-    margin: 0px;
 }
+    
 
 #navfontcolor{
     color: green;
@@ -12,7 +11,7 @@
 
 #carouselExampleIndicators{
     margin-top: 0px;
-    margin:auto;
+
 }
 
 /* OUR RESENT PROJECTS */
@@ -43,7 +42,33 @@
 }
 
 #visionrow{
+    margin: 0px;
+
+}
+#visioncol{
+    border: 1px solid black;
+    padding: auto;
+}
+
+#visionimg{
+    height: 80px;;
+    width: 80px;
+    border-radius:50%;
+}
+
+/************* FOOTER ****************/
+#footerall{
+    background-color: #090357;
+    color: white;
     
 
+}
+
+#footercol{
+    padding: 5px;
+}
+
+#booterbar{
+  text-align: center;
 }
 
