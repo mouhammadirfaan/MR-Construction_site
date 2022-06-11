@@ -12,59 +12,64 @@
   <body>
 
     <!------------------------ NAVEBAR ----------->
-    <nav class="navbar navbar-expand-lg" id="navbarcolor">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">MR CONSTRUCTION SERVICES</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'about' %}">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'projects' %}">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'contect' %}">Contect</a>
-            </li>
-          </ul>
+    <section class="header">
+      <nav class="navbar navbar-expand-lg" id="navbarcolor">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MR CONSTRUCTION SERVICES</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'contect' %}">Contect</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </section>
 
           <!---------- SLIDESHOW ------->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
+    <section class="slideshow">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
 
-          <img src="{% static 'media/pic.png' %}" class="d-block w-100" alt="...">
+            <img src="{% static 'media/slide-img1.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'media/slide-img2.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'media/slide-img3.jpg %}" class="d-block w-100" alt="...">
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="{% static 'media/status.png' %}" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="{% static 'media/best story1.png' %}" class="d-block w-100" alt="...">
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+    </section>
+    
 
     <!------ OUR RESENT PROJECTS -->
 
@@ -107,10 +112,13 @@
     <h1 id="vision">Our Vision and Mission</h1>
     <div id="visionrow" class="row">
       <div id="visioncol" class="col-md-6">
-        <img id="visionimg" src="{% static 'media/irfan.png' %}" alt="">
+        <!-- <img id="visionimg" src="{% static 'media/irfan.png' %}" alt=""> -->
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam veniam 
           provident corrupti voluptas non libero molestiae dicta tempora amet? Maiores 
           amet vitae nam voluptatem quisquam assumenda exercitationem, a soluta illo.</p>
+        
+          <img id="visionimg" src="{% static 'media/irfan.png' %}" alt="">
+
       </div>
       <div id="visioncol" class="col-md-6">
         <img id="visionimg" src="{% static 'media/irfan.png' %}" alt="">

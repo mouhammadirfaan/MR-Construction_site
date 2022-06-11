@@ -1,11 +1,8 @@
-#navbarcolor{
-    background-color:bisque;
-    color:white;
+.header{
+    background: #090357;
 }
-    
-
-#navfontcolor{
-    color: green;
+.header a{
+    color: rgb(255, 255, 255);
     padding-left: 20px;
 }
 
