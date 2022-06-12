@@ -12,13 +12,17 @@
 }
 
 /* OUR RESENT PROJECTS */
+.home-project{
+    background: gray;
+    margin: 0px;
+    padding: 10px 0px 20px 0px;
+
+}
 .recentProjHeader{
-    background-color: antiquewhite;
+    
     color: black;
     text-align: center;
     padding-top: 10px;
-    padding: 10px 0px 20px 0px;
-
 }
 
 #recentrow{
@@ -29,29 +33,34 @@
 
 /* OUR VISION AND MISSION */
 
-#vision{
-    background: black;
-    color:green;
+.home-vision{
+    background: whitesmoke;
     text-align: center;
-    text-shadow: 10px;
     padding: 10px 0px 10px 0px;
+}
+
+.home-vision .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.home-vision .box-container .box .content{
+    padding:2rem;
+    text-align: center;
+    border-left: 4px solid red;
+    margin-left: 2px;
 
 }
 
-#visionrow{
-    margin: 0px;
+.home-vision .box-container .box .image img{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px; 
+    padding-bottom: 20;
 
 }
-#visioncol{
-    border: 1px solid black;
-    padding: auto;
-}
 
-#visionimg{
-    height: 80px;;
-    width: 80px;
-    border-radius:50%;
-}
 
 /************* FOOTER ****************/
 #footerall{
