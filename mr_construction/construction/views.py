@@ -2,6 +2,8 @@ from urllib import request
 from django.shortcuts import render
 from django.http import HttpResponse, HttpRequest
 
+from construction.models import ContactForm 
+
 
 # Create your views here.
 def Index(request):
