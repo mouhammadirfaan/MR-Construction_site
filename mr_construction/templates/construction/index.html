@@ -22,7 +22,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
+                <a class="nav-link" href="{% url 'index' %}">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'about' %}">About</a>
@@ -31,13 +31,15 @@
                 <a class="nav-link" href="{% url 'projects' %}">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'contect' %}">Contect</a>
+                <a class="nav-link" href="{% url 'contact' %}">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </section>
+
+    {% block content %}
 
           <!---------- SLIDESHOW ------->
     <section class="slideshow">
@@ -106,6 +108,7 @@
           </div>
         </div>
       </div>
+      <a id="moreProject" class="btn btn-primary" href="{% url 'projects' %}">More Projects</a>
     </section>
 
     <!------------------ OUR VISION AND MISSION -->
@@ -146,43 +149,46 @@
 
     </section>
 
+    {% endblock %}
+
     <!--------------- FOOTER --------->
-
-    <footer id="footerall">
-      <div id="footer row" class="row">
-        <div id="footercol" class="col-md-4">
-          <h3 id="nameinfooter">  MR CONSTRUCTION SERVICES</h3>
-          <br>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <section class="footer">
+      <footer id="footerall">
+        <div id="footer row" class="row">
+          <div id="footercol" class="col-md-4">
+            <h3 id="nameinfooter">  MR CONSTRUCTION SERVICES</h3>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div id="footercol" class="col-md-4">
+            <h3 id="nameinfooter">Chick The Links</h3>
+            <br>
+            <ul>
+              <li>
+                <a href="https://google.com">Go To Google </a>
+              </li>
+              <li>
+                <a href="https://github.com">Go To Github</a>
+              </li>
+              <li>
+                <a href="https://youtube.com">Go To Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div id="footercol" class="col-md-4">
+            <h3 id="nameinfooter">Our Services</h3>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente hic impedit deleniti expedita consequuntur veritatis ut facilis? Error, debitis? Magni dicta cupiditate repellendus quos doloribus iure deleniti amet minima velit.</p>
+          </div>
         </div>
-        <div id="footercol" class="col-md-4">
-          <h3 id="nameinfooter">Chick The Links</h3>
-          <br>
-          <ul>
-            <li>
-              <a href="https://google.com">Go To Google </a>
-            </li>
-            <li>
-              <a href="https://github.com">Go To Github</a>
-            </li>
-            <li>
-              <a href="https://youtube.com">Go To Youtube</a>
-            </li>
-          </ul>
-        </div>
-        <div id="footercol" class="col-md-4">
-          <h3 id="nameinfooter">Our Services</h3>
-          <br>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente hic impedit deleniti expedita consequuntur veritatis ut facilis? Error, debitis? Magni dicta cupiditate repellendus quos doloribus iure deleniti amet minima velit.</p>
-        </div>
-      </div>
 
-      <div id="booterbar" class="container">
-        <hr>
-        <p>all rigth reserved by MR Construction</p>
-      </div>
+        <div id="booterbar" class="container">
+          <hr>
+          <p>all rigth reserved by MR Construction</p>
+        </div>
 
-   </footer>
+      </footer>
+   </section>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>

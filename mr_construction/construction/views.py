@@ -10,8 +10,8 @@ def Index(request):
 def About(request):
     return render(request, 'construction/about.html')
 
-def Projdcts(request):
-    return render(request, 'construction/projdcts.html')
+def Projects(request):
+    return render(request, 'construction/projects.html')
 
 def Contect(request):
-    return render(request, 'constructiion/contect.html')
+    return render(request, 'construction/contact.html')
