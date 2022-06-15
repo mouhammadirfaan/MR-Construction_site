@@ -81,3 +81,13 @@
   text-align: center;
 }
 
+/*------------------ CONTACT FORM */
+.contact{
+    background-image:url("/static/media/contact-img.jpg") 50% 0 no-repeat fixed;
+     
+}
+.contact .container{
+    background-color: aquamarine;
+}
+
+
