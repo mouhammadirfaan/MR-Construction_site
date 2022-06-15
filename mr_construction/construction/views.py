@@ -1,5 +1,6 @@
 from urllib import request
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse, HttpRequest
 
 from construction.models import ContactForm 
@@ -21,14 +22,12 @@ def Contect(request):
         form = ContactForm(request.POST)
 
         if form.is_valid():
-            firtname = form.cleaned_data['firsr_name']
-            lastname = form.cleaned_deta['firsr_name']
+            firtname = form.cleaned_data['first_name']
+            lastname = form.cleaned_deta['last_name']
             email = form.cleaned_deta['email_address']
-            message = form.cleaned_deta['text']
+            message = form.cleaned_deta['text_area']
+    else:
 
+        form = ContactForm()
 
-
-
-
-
-    return render(request, 'construction/contact.html')
+    return render(request, 'construction/contact.html', {"form":form})

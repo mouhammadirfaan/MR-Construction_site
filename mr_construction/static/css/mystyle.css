@@ -83,11 +83,13 @@
 
 /*------------------ CONTACT FORM */
 .contact{
-    background-image:url("/static/media/contact-img.jpg") 50% 0 no-repeat fixed;
-     
+    background-image:url("/static/media/contact-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    padding: 20px
+       
 }
-.contact .container{
-    background-color: aquamarine;
-}
+
 
 
