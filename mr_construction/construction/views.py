@@ -16,7 +16,7 @@ def About(request):
 def Projects(request):
     return render(request, 'construction/projects.html')
 
-def Contect(request):
+def Contect_view(request):
 
     if request.method == 'POST':
         form = ContactForm(request.POST)
