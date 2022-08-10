@@ -1,10 +1,8 @@
-from urllib import request
-from django.shortcuts import render, redirect
-from django.core.mail import send_mail, BadHeaderError
-from django.http import HttpResponse, HttpRequest
+from operator import index
+from django.shortcuts import render
 
-from construction.models import ContactForm 
-from .forms import Contect
+
+from construction.forms import Contact
 
 
 # Create your views here.
@@ -19,11 +17,29 @@ def Projects(request):
 
 def Contect_view(request):
 
-    if request.method == 'POST':
-        form = Contect(request.POST)
+    form = Contact()
+
+    if request.method == 'POST' :
+        form = Contact(request.POST)
+
         if form.is_valid():
-            form.save()
-            return render(request, 'construction/success.html')
+            form.save(commit=True)
+            return index(request)
+        else:
+            print("ERROR FORM NVALID")
+            
+    return render(request, 'construction/contact.html', {'form': form})
+
+
+
+
+    # if request.method == 'POST':
+    #     form = Contect(request.POST)
+    #     if form.is_valid():
+    #         form.save()
+    #         return render(request, 'construction/success.html')
+
+
     # form = ContactForm()
     # context = {'form': form}
     # return render(request, 'construction/contact.html', context)

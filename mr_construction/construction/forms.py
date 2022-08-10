@@ -1,10 +1,7 @@
-from dataclasses import field
-import imp
-from pyexpat import model
-from django.forms import ModelForm
-from .models import ContactForm
+from django import forms
+from construction.models import ContactForm
 
-class Contect(ModelForm):
+class Contact(forms.ModelForm):
     class meta:
         model = ContactForm
         fields = '__all__'

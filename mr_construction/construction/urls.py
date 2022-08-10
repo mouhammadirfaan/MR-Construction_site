@@ -1,7 +1,10 @@
 # from django.contrib import admin
 from django.urls import path
 from django.contrib.auth import views
+from construction import views
+
 # from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
 
 urlpatterns = [
     path('', views.Index, name='index'),
